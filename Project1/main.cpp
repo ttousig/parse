@@ -4,11 +4,11 @@
 #include <sstream>
 #include "roster.h"
 
-//E1.Create an array of pointers, classRosterArray, to hold the data provided in the ìstudentData Table.î
+//E1.Create an array of pointers, classRosterArray, to hold the data provided in the ‚ÄústudentData Table.‚Äù
 
 /*E2.  Create a student object for each student in the data table and populate classRosterArray.
 
-a.  Parse each set of data identified in the ìstudentData Table.î
+a.  Parse each set of data identified in the ‚ÄústudentData Table.‚Äù
 
 b.  Add each student object to classRosterArray.
 */
@@ -19,7 +19,7 @@ const string studentData[] =
     "A2,Suzan,Erickson,Erickson_1990@gmailcom,19,50,30,40,NETWORK",
     "A3,Jack,Napoli,The_lawyer99yahoo.com,19,20,40,33,SOFTWARE",
     "A4,Erin,Black,Erin.black@comcast.net,22,50,58,40,SECURITY",
-    "A5,Tesla,Tousignant,ttousig@wgu.edu,30,20,30,40,SOFTWARE" //A.  Modify the ìstudentData Tableî to include your personal information as the last item.
+    "A5,firstname,lastname,username@email.edu,30,20,30,40,SOFTWARE" //A.  Modify the ‚ÄústudentData Table‚Äù to include your personal information as the last item.
 };
 
 int main()
@@ -47,7 +47,7 @@ int main()
     string degreeProgramTemp = "";
     DegreeProgram degreeProgram = DegreeProgram::NETWORK;
 
-    //E2.a.  Parse each set of data identified in the ìstudentData Table.î ; Parse strings in studentData[]
+    //E2.a.  Parse each set of data identified in the ‚ÄústudentData Table.‚Äù ; Parse strings in studentData[]
     //Parse method based on video in Tip #10 --"Parsing a string on delimiter with String stream"
     for (int i = 0; i < 5; i++)
     {
